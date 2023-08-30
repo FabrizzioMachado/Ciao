@@ -16,7 +16,6 @@ class Temperation(App):
         video.allow_stretch = True
         video.size_hint = (2.95, 2.9)
         video.pos_hint = {"center_x": 0.5, "center_y": 0.5}
-        video.size = (Window.width, Window.height)
         video.opacity = 0.60
         layout.add_widget(video)
 
