@@ -13,12 +13,13 @@ class Temperation(App):
         layout = FloatLayout()
 
         # Aggiungi il video di sfondo
-        imagi = Image(source="immagine_2023-08-31_092336991.png")
-        imagi.allow_stretch = True
-        imagi.size_hint = (2.95, 2.9)
-        imagi.pos_hint = {"center_x": 0.5, "center_y": 0.5}
-        imagi.opacity = 0.60
-        layout.add_widget(imagi)
+        video = Video(source='SOLE.mp4', state='play', options={'eos': 'loop'})
+        video.allow_stretch = True
+        video.size_hint = (2.95, 2.9)
+        video.pos_hint = {"center_x": 0.5, "center_y": 0.5}
+        video.size = (Window.width, Window.height)
+        video.opacity = 0.60
+        layout.add_widget(video)
 
         # Aggiungi il titolo
         title_label = Label(text='TEMPERATION', bold=True, underline=True, italic=True,  font_size='45sp', pos_hint={"center_x": 0.5, "center_y": 0.8}, size_hint=(1, 0.1))
