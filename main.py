@@ -13,7 +13,7 @@ class Temperation(App):
         layout = FloatLayout()
 
         # Aggiungi il video di sfondo
-        imagi = Image(source="immagine_2023-08-31_092336991.png"))
+        imagi = Image(source="immagine_2023-08-31_092336991.png")
         imagi.allow_stretch = True
         imagi.size_hint = (2.95, 2.9)
         imagi.pos_hint = {"center_x": 0.5, "center_y": 0.5}
